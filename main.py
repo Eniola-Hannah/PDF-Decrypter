@@ -31,4 +31,13 @@ def select_file():
     file_entry.delete(0, tk.END)
     file_entry.insert(0, file_path)
 
+
+# Function to initiate PDF decryption process
+def decrypt():
+    input_path = file_entry.get()
     
+    output_path = input_path[:-4] + "_decrypted.pdf"
+    
+    password = password_entry.get()
+    
+    decrypt_pdf(input_path, output_path, password)  
