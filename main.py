@@ -22,3 +22,13 @@ def decrypt_pdf(input_path, output_path, password):
             status_label.config(text="PDF decrypted successfully.")
         else:
             status_label.config(text="PDF is not encrypted.")
+
+
+# Function to let the user select a PDF file
+def select_file():
+    file_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
+    # Clear any previous entry and insert the selected file path into the entry widget
+    file_entry.delete(0, tk.END)
+    file_entry.insert(0, file_path)
+
+    
