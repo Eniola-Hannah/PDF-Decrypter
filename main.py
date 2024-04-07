@@ -4,4 +4,6 @@ from PyPDF2 import PdfReader, PdfWriter
 
 # Function to decrypt a PDF file
 def decrypt_pdf(input_path, output_path, password):
-    pass
+    
+    with open(input_path, 'rb') as file:
+        reader = PdfReader(file)
