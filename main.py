@@ -65,3 +65,8 @@ password_label = tk.Label(root, text="Enter Password:")
 password_label.pack()
 password_entry = tk.Entry(root, show="*", width=70)
 password_entry.pack()
+
+
+# Button to initiate PDF decryption process
+decrypt_button = tk.Button(root, text="Decrypt", command=decrypt)
+decrypt_button.pack()
