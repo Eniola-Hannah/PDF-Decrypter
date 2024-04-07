@@ -75,3 +75,7 @@ decrypt_button.pack()
 # Label to display status messages (e.g., success or failure)
 status_label = tk.Label(root, text="")
 status_label.pack()
+
+
+# Start the tkinter main event loop
+root.mainloop()
