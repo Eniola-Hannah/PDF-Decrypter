@@ -70,3 +70,8 @@ password_entry.pack()
 # Button to initiate PDF decryption process
 decrypt_button = tk.Button(root, text="Decrypt", command=decrypt)
 decrypt_button.pack()
+
+
+# Label to display status messages (e.g., success or failure)
+status_label = tk.Label(root, text="")
+status_label.pack()
