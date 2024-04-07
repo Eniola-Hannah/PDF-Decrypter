@@ -47,4 +47,9 @@ def decrypt():
 root = tk.Tk()
 root.title("GROUP 4 PDF DECRYPTER")
 
-    
+
+# Label and entry widget for selecting a PDF file
+file_label = tk.Label(root, text="Select PDF File:")
+file_label.pack()
+file_entry = tk.Entry(root, width=70)
+file_entry.pack()
