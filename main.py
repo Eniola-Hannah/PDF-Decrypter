@@ -41,3 +41,10 @@ def decrypt():
     password = password_entry.get()
     
     decrypt_pdf(input_path, output_path, password)  
+
+
+# GUI setup using tkinter
+root = tk.Tk()
+root.title("GROUP 4 PDF DECRYPTER")
+
+    
