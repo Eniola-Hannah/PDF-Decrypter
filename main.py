@@ -53,3 +53,8 @@ file_label = tk.Label(root, text="Select PDF File:")
 file_label.pack()
 file_entry = tk.Entry(root, width=70)
 file_entry.pack()
+
+
+# Button to open file dialog for selecting a PDF file
+browse_button = tk.Button(root, text="Browse", command=select_file)
+browse_button.pack()
