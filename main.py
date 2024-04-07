@@ -58,3 +58,10 @@ file_entry.pack()
 # Button to open file dialog for selecting a PDF file
 browse_button = tk.Button(root, text="Browse", command=select_file)
 browse_button.pack()
+
+
+# Label and entry widget for entering the password
+password_label = tk.Label(root, text="Enter Password:")
+password_label.pack()
+password_entry = tk.Entry(root, show="*", width=70)
+password_entry.pack()
